@@ -1,25 +1,49 @@
 body{
     margin:-1px;
     font-family: "Exo 2", calibri;
-    color:#000000;
+    color:#ffffff;
     background-color: #345793;
 }
 main{
     margin: 0px;
     padding: 20px;
-    background-color: #dddddd;
+    background-color: #4872bb;
 }
 h1{
+    color: #ffffff;
     text-align: center;
     font-size: clamp(50px, 5vw, 75px);
     font-weight: 800;
+    text-shadow: 0px 2px 2px #000000;
 }
+
+.backing{
+    border-radius: 1.5rem;
+    background-color: #3862ab;
+    width: 55vw;
+    height: fit-content;
+    margin: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 1px 1px 1px #000000;
+}
+
 .navbar{
     text-align: center;
     position: sticky;
     top: 0px;
     z-index: 99999;
+    box-shadow: 0px 0px 0px#000000;
+    transition: 0.2s;
 }
+
+.navbar:hover{
+   box-shadow: 0px 2px 2px#000000;
+   transition: 0.2s;
+}
+
 .navbar ul{
     list-style-type: none;
     background-color: #1f365e;
@@ -37,7 +61,7 @@ h1{
 }
 
 .navbar a:hover{
-    background-color: #345793;
+    background-color: #2d4c81;
 }
 .navbar li{
     float: left;
@@ -45,42 +69,50 @@ h1{
 
 .navbar .active{
     background-color: #78bdf6;
+    box-shadow: 0px 3px 3px#000000;
 }
 
 .ItemBox{
-    background-color: #333344;
-    width: 60vw;
-    height: 65vh;
+    color:#ffffff;
+    background-color: #345793;
+    width: 50vw;
+    height: fit-content;
     margin: 10px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-radius: 10px;
     padding: 5px;
+    box-shadow: 2px 2px 2px #222222;
+    transition: 0.2s;
 }
 
 .ItemBox h4{
-    background-color: #222233;
+    background-color: #78bdf6;
     border-radius: 10px;
     padding: 0px;
     margin: 0px;
+    color: #ffffff;
+    box-shadow: 1px 1px 1px #000000;
 }
 
 .ItemBox .Purchase{
-    background-color: #222244;
+    background-color: #78bdf6;
     color: #ffffff;
-    border-radius: 10px;
-    width:30vw;
-    height:5vw;
+    border-radius: 1.5rem;
+    width:20vw;
+    height:3vw;
     border:solid;
-    border-color: #111133;
-    font-size: clamp(5px,3.5vw,50px);
+    border-color: #4872bb;
+    box-shadow: 1px 1px 1px #000000;
+    font-size: clamp(2px,2vw,50px);
     
 }
 
 .ItemBox .Purchase:hover{
-    background-color: #333355;
-    border-color: #222244;
+    background-color: #a6d7ff;
+    border-color: #78bdf6;
+    box-shadow: 0px 0px 0px #000000;
     
 }
 
