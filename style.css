@@ -72,6 +72,21 @@ h1{
     box-shadow: 0px 3px 3px#000000;
 }
 
+.navbar .social{
+    float: right;
+    padding: 0px;
+    height: 20px
+}
+
+.navbar .social a img{
+    margin: 0px;
+}
+
+
+.socialLogo{
+    margin: 0px;
+}
+
 .ItemBox{
     color:#ffffff;
     background-color: #345793;
@@ -83,7 +98,7 @@ h1{
     text-align: center;
     border-radius: 10px;
     padding: 5px;
-    box-shadow: 2px 2px 2px #222222;
+    box-shadow: 2px 2px 2px #000000;
     transition: 0.2s;
 }
 
@@ -127,7 +142,7 @@ h1{
 }
 
 .ItemBox:hover{
-    box-shadow: 5px 5px 2px #222222;
+    box-shadow: 5px 5px 2px #000000;
     transition: 0.2s;
 }
 
@@ -170,4 +185,32 @@ form input:active{
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
+}
+
+.contactInfo{
+    border-radius: 1.5rem;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #2d4c81;
+    box-shadow: 2px 2px 2px #000000;
+    transition: 0.2s;
+}
+
+.contactInfo:hover{
+    box-shadow: 5px 5px 2px #000000;
+    transition: 0.2s;
+}
+
+.contactList{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0px, auto;
+    overflow: hidden;
+    align-content: center;
+}
+
+.contactList li{
+    float: left;
+    margin: 10px;
 }
