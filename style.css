@@ -1,6 +1,6 @@
 body{
     margin:-1px;
-    font-family: "Exo 2", calibri;
+    font-family:"Exo 2", calibri;
     color:#ffffff;
     background-color: #345793;
 }
@@ -15,6 +15,11 @@ h1{
     font-size: clamp(50px, 5vw, 75px);
     font-weight: 800;
     text-shadow: 0px 2px 2px #000000;
+}
+
+h1 .logo{
+    position: relative;
+    top: 25px;
 }
 
 .backing{
@@ -174,7 +179,7 @@ form input:active{
 }
 
 .email{
-    color:#7777aa;
+    color:#65d17a;
 }
 
 .magazine{
@@ -186,6 +191,19 @@ form input:active{
     margin-right: auto;
     z-index: 1;
 }
+
+.magazine embed{
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px #000000;
+    transition: 0.2s;
+}
+
+.magazine embed:hover{
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px #000000;
+    transition: 0.2s;
+}
+
 
 .contactInfo{
     border-radius: 1.5rem;
@@ -213,4 +231,16 @@ form input:active{
 .contactList li{
     float: left;
     margin: 10px;
+}
+
+footer{
+    padding: 10px;
+}
+
+footer .logo{
+    float: right;
+}
+
+.calibri {
+    font-family: calibri;
 }
