@@ -1,6 +1,6 @@
 body{
     margin:-1px;
-    font-family:"Exo 2", calibri;
+    font-family:"Exo 2", calibri !important;
     color:#ffffff;
     background-color: #345793;
 }
@@ -242,5 +242,5 @@ footer .logo{
 }
 
 .calibri {
-    font-family: calibri;
+    font-family: calibri !important;
 }

@@ -1,0 +1,132 @@
+
+:root{
+    --boardWidth: 350px;
+    --boardHeight: 420px;
+    --flipDuration: 500ms;
+}
+
+body{
+    text-align: center;
+    font-family:"Exo 2", calibri !important;
+    color: #f8F8F8;
+}
+
+hr{
+    width: 500px;
+    color: #677bfff9;
+}
+
+.spacer{
+    width: 200px;
+}
+
+.menu{
+    border-radius: 1.5rem;
+    background-color: #2d4c81;
+    max-width: fit-content;
+    height: 40px;
+    color: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    font-size: 25px;
+}
+
+.menu:hover{
+    background-color: #262f6d;
+}
+
+.menu:disabled{
+    max-width: 0px;
+    height: 0px;
+    font-size: 0px;
+    background-color: #00000000;
+    border: 1px solid #4872bb;
+}
+
+#letters{
+    width: var(--boardWidth);
+    margin: 0 auto;
+    font-size: 30px;
+    letter-spacing: 47px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.displayLetters{
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#board {
+    width: var(--boardWidth);
+    height: var(--boardHeight);
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile{
+    /* Box */
+    border: 2px solid #3c4582c6;
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+
+    /* Text */
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct{
+    background-color: #7bcb74;
+    color: #ffffff;
+    border-color: #00000000;
+}
+
+.present{
+    background-color: #e74141;
+    color: #ffffff;
+    border-color: #00000000;
+}
+
+.absent{
+    background-color: #394752;
+    color: #ffffff;
+    border-color: #00000000;
+}
+
+.animated{
+    animation-name: flip;
+    animation-duration: var(--flipDuration);
+    animation-timing-function: ease;
+}
+
+@keyframes flip {
+    0% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
