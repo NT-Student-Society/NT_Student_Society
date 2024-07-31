@@ -184,7 +184,7 @@ form input:active{
 
 .magazine{
     width: 80vw;
-    height: 50vw;
+    height: fit-content;
     position: relative;
     text-align: center;
     margin-left: auto;
@@ -196,12 +196,14 @@ form input:active{
     border-radius: 1rem;
     box-shadow: 2px 2px 2px #000000;
     transition: 0.2s;
+    height: 500px;
 }
 
 .magazine embed:hover{
     border-radius: 1rem;
     box-shadow: 5px 5px 5px #000000;
     transition: 0.2s;
+    height: 1000px;
 }
 
 
